@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="appbackground">#424548</color>
+    
+    <!-- 图表点的不同状态的颜色 -->
+    <color name="chartpointgreen">#16a632</color>
+    <color name="chartpointyellow">#efc00a</color>
+    <color name="chartpointred">#e10018</color>
+</resources>
