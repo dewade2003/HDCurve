@@ -7,12 +7,17 @@
  */
 package com.huidongtech.hdcurve.view.user;
 
+import com.huidongtech.hdcurve.R;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ContentView;
+
 import android.app.Activity;
 import android.os.Bundle;
 
 /**
  * 用户管理页
  */
+@ContentView(R.layout.activity_user)
 public class UserActivity extends Activity {
 
 	/* 
@@ -22,5 +27,6 @@ public class UserActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		ViewUtils.inject(this);
 	}
 }

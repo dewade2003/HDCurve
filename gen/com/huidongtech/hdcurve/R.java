@@ -9,14 +9,26 @@ package com.huidongtech.hdcurve;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int metaButtonBarButtonStyle=0x7f010001;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int metaButtonBarStyle=0x7f010000;
     }
     public static final class color {
         public static final int appbackground=0x7f060000;
+        public static final int black_overlay=0x7f060004;
         /**  图表点的不同状态的颜色 
          */
         public static final int chartpointgreen=0x7f060001;
         public static final int chartpointred=0x7f060003;
         public static final int chartpointyellow=0x7f060002;
+        /**  白色文字按钮按下时的颜色 
+         */
+        public static final int whitebtnpress=0x7f060005;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -30,11 +42,12 @@ public final class R {
         public static final int activity_vertical_margin=0x7f070001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int add=0x7f020000;
+        public static final int btn=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
     }
     public static final class id {
-        public static final int main_btnTestDB=0x7f080000;
-        public static final int main_tv_DBInfo=0x7f080001;
+        public static final int tv_welcome=0x7f080000;
     }
     public static final class layout {
         public static final int activity_alert=0x7f030000;
@@ -48,10 +61,8 @@ public final class R {
         public static final int activity_welcome=0x7f030008;
     }
     public static final class string {
-        public static final int action_settings=0x7f040002;
         public static final int app_name=0x7f040000;
-        public static final int hello_world=0x7f040001;
-        public static final int title_activity_user=0x7f040003;
+        public static final int user_add=0x7f040001;
     }
     public static final class style {
         /** 
@@ -99,9 +110,52 @@ public final class R {
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f050001;
+        public static final int FullscreenActionBarStyle=0x7f050004;
+        public static final int FullscreenTheme=0x7f050003;
         public static final int MyDialogStyle=0x7f050002;
     }
+    public static final class styleable {
+        /** 
+         Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels.
+    
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarButtonStyle com.huidongtech.hdcurve:metaButtonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarStyle com.huidongtech.hdcurve:metaButtonBarStyle}</code></td><td></td></tr>
+           </table>
+           @see #ButtonBarContainerTheme_metaButtonBarButtonStyle
+           @see #ButtonBarContainerTheme_metaButtonBarStyle
+         */
+        public static final int[] ButtonBarContainerTheme = {
+            0x7f010000, 0x7f010001
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.huidongtech.hdcurve.R.attr#metaButtonBarButtonStyle}
+          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.huidongtech.hdcurve:metaButtonBarButtonStyle
+        */
+        public static final int ButtonBarContainerTheme_metaButtonBarButtonStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.huidongtech.hdcurve.R.attr#metaButtonBarStyle}
+          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.huidongtech.hdcurve:metaButtonBarStyle
+        */
+        public static final int ButtonBarContainerTheme_metaButtonBarStyle = 0;
+    };
 }
