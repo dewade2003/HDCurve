@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="11"
         android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -30,6 +30,21 @@
         <activity
             android:name=".view.user.UserActivity"
             android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".view.user.UserEditActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialogStyle"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".view.data.DataManagerActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".view.components.AlertActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialogStyle" >
         </activity>
     </application>
 

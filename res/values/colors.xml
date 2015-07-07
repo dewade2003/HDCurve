@@ -11,5 +11,9 @@
     
     <!-- 白色文字按钮按下时的颜色 -->
     <color name="whitebtnpress">#ced1d4</color>
+    
+    <color name="halftransparent">#e0000000</color>
+      <color name="deepblue">#121fcb</color>
+      <color name="green">#2aa915</color>
 
 </resources>

@@ -18,7 +18,7 @@ import android.app.Application;
  */
 public class HDCurveApplication extends Application {
 	
-	public DbUtils defaultDBUtils;
+	public static HDCurveApplication appInstance;
 
 	/* (non-Javadoc)
 	 * @see android.app.Application#onCreate()
@@ -29,7 +29,13 @@ public class HDCurveApplication extends Application {
 		super.onCreate();
 		LogUtils.customTagPrefix="hdcurve";
 		
-		defaultDBUtils= DbUtils.create(getApplicationContext(), "hdcurve");
+		DbUtils.create(getApplicationContext(), "hdcurve");
 //		defaultDBUtils= DbUtils.create(getApplicationContext(), "/sdcard/HDCurve/", "hdcurve");
+		appInstance=this;
+				
+	}
+	
+	public static HDCurveApplication getInstance(){
+		return appInstance;
 	}
 }

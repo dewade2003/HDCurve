@@ -4,4 +4,6 @@
     <string name="app_name">慧动曲线</string>
 
     <string name="user_add">新建人员</string>
+    <string name="ok">确定</string>
+    <string name="cancle">取消</string>
 </resources>

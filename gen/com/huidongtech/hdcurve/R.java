@@ -26,6 +26,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int chartpointgreen=0x7f060001;
         public static final int chartpointred=0x7f060003;
         public static final int chartpointyellow=0x7f060002;
+        public static final int deepblue=0x7f060007;
+        public static final int green=0x7f060008;
+        public static final int halftransparent=0x7f060006;
         /**  白色文字按钮按下时的颜色 
          */
         public static final int whitebtnpress=0x7f060005;
@@ -43,11 +46,47 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class drawable {
         public static final int add=0x7f020000;
-        public static final int btn=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
+        public static final int alert_bg=0x7f020001;
+        public static final int back=0x7f020002;
+        public static final int btn=0x7f020003;
+        public static final int edit=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int pdetail_first_checked=0x7f020006;
+        public static final int pdetail_first_nomal=0x7f020007;
+        public static final int pdetail_firstitem=0x7f020008;
+        public static final int pdetail_last_checked=0x7f020009;
+        public static final int pdetail_last_nomal=0x7f02000a;
+        public static final int pdetail_lastitem=0x7f02000b;
+        public static final int symbol=0x7f02000c;
+        public static final int trash=0x7f02000d;
+        public static final int v2_gallery_contacts_dialog_background=0x7f02000e;
     }
     public static final class id {
-        public static final int tv_welcome=0x7f080000;
+        public static final int addUserLayout=0x7f080010;
+        public static final int alert_msgView=0x7f080001;
+        public static final int alert_titleView=0x7f080000;
+        public static final int backView=0x7f080005;
+        public static final int btnCancle=0x7f080003;
+        public static final int btnOk=0x7f080002;
+        public static final int calendarView=0x7f080007;
+        public static final int dialogText=0x7f080013;
+        public static final int iv_add=0x7f08000b;
+        public static final int iv_delete=0x7f08000d;
+        public static final int iv_edit=0x7f08000c;
+        public static final int letterview1=0x7f080011;
+        public static final int letterview2=0x7f080014;
+        public static final int llflv_indexList=0x7f08000e;
+        public static final int rg_testtype=0x7f08000a;
+        public static final int rl_testtime=0x7f080008;
+        public static final int title=0x7f080004;
+        public static final int tv_reamrk=0x7f08000f;
+        public static final int tv_testtime=0x7f080009;
+        public static final int tv_welcome=0x7f080015;
+        public static final int userDataManage=0x7f080016;
+        public static final int userEdit=0x7f080018;
+        public static final int userList=0x7f080012;
+        public static final int userName=0x7f080006;
+        public static final int userShowCurve=0x7f080017;
     }
     public static final class layout {
         public static final int activity_alert=0x7f030000;
@@ -59,9 +98,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_user=0x7f030006;
         public static final int activity_useredit=0x7f030007;
         public static final int activity_welcome=0x7f030008;
+        public static final int user_item=0x7f030009;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
+        public static final int cancle=0x7f040003;
+        public static final int ok=0x7f040002;
         public static final int user_add=0x7f040001;
     }
     public static final class style {
@@ -110,6 +152,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
  Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f050001;
         public static final int FullscreenActionBarStyle=0x7f050004;
